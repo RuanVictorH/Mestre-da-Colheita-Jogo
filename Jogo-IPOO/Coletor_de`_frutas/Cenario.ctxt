@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Cenario
+comment0.text=\r\n\ Classe\ Cenario\ -\ O\ mundo\ onde\ o\ jogo\ acontece.\r\n\ Aqui\ configuramos\ o\ tamanho\ do\ mundo,\ adicionamos\ o\ personagem\ e\ geramos\ frutas\ e\ frutas\ podres.\r\n
+comment1.params=
+comment1.target=Cenario()
+comment2.params=
+comment2.target=void\ preparar()
+comment3.params=
+comment3.target=Contador\ getContador()
+comment4.params=
+comment4.target=void\ act()
+comment5.params=
+comment5.target=void\ addFruta()
+comment6.params=
+comment6.target=void\ addFrutaPodre()
+numComments=7

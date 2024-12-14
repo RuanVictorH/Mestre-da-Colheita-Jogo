@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Maca
+comment0.text=\r\n\ Classe\ Fruta\ -\ Representa\ as\ frutas\ boas\ que\ o\ personagem\ deve\ coletar\r\n
+comment1.params=
+comment1.target=Maca()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ cair()
+comment4.params=
+comment4.target=void\ aumentarVelocidade()
+numComments=5

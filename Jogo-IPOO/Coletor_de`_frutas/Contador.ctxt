@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Contador
+comment0.text=\r\n\ Classe\ Contador\ -\ Respons\u00E1vel\ por\ manter\ e\ atualizar\ a\ contagem\ de\ frutas\ coletadas\ e\ perdidas.\r\n
+comment1.params=
+comment1.target=Contador()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=frutasBoas
+comment3.target=void\ atualizarFrutasBoas(int)
+comment4.params=
+comment4.target=void\ atualizarFrutasBoasPerdidas()
+comment5.params=frutasPodres
+comment5.target=void\ atualizarFrutasPodres(int)
+comment6.params=
+comment6.target=void\ atualizarTexto()
+comment7.params=
+comment7.target=int\ getFrutasBoas()
+comment8.params=
+comment8.target=int\ getFrutasBoasPerdidas()
+comment9.params=
+comment9.target=int\ getFrutasPodres()
+numComments=10

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Personagem
+comment0.text=\r\n\ Classe\ Personagem\ -\ Representa\ o\ personagem\ jog\u00E1vel\ do\ jogo\r\n
+comment1.params=contador
+comment1.target=Personagem(Contador)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ morrer()
+numComments=4
