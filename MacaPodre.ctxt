@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=MacaPodre
+comment0.text=\r\n\ Classe\ MacaPodre\ (subclasse\ de\ Fruta)\r\n\ \r\n\ Esta\ classe\ representa\ as\ frutas\ podres\ que\ devem\ ser\ evitadas\ pelo\ personagem.\r\n\ \r\n\ @autor\ Alex,\ Pedro\ e\ Ruan\r\n\ @version\ 2024.12.08\r\n
+comment1.params=
+comment1.target=MacaPodre()
+comment1.text=\r\n\ Construtor\ da\ classe\ MacaPodre.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ M\u00E9todo\ chamado\ a\ cada\ ato\ ou\ quando\ o\ bot\u00E3o\ "Run"\ \u00E9\ pressionado\ no\ Greenfoot.\r\n\ Faz\ a\ fruta\ podre\ realizar\ suas\ a\u00E7\u00F5es.\r\n
+comment3.params=
+comment3.target=void\ aumentarVelocidade()
+comment3.text=\r\n\ Aumenta\ a\ velocidade\ da\ fruta\ podre\ at\u00E9\ um\ m\u00E1ximo\ de\ 5.\r\n
+numComments=4

@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Menu
+comment0.text=\r\n\ Classe\ Menu\ (subclasse\ de\ World)\r\n\ \r\n\ Esta\ classe\ representa\ o\ menu\ inicial\ do\ jogo,\ onde\ o\ jogador\ pode\r\n\ acessar\ outras\ partes\ do\ jogo,\ como\ iniciar,\ ajuda\ e\ descri\u00E7\u00E3o.\r\n\ \r\n\ @author\ Alex,\ Pedro\ e\ Ruan\r\n\ @version\ 2024.12.08\r\n
+comment1.params=
+comment1.target=Menu()
+comment1.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ Menu.\r\n\ Define\ o\ tamanho\ do\ mundo\ e\ inicializa\ os\ componentes.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ M\u00E9todo\ chamado\ a\ cada\ ato\ ou\ quando\ o\ bot\u00E3o\ "Run"\ \u00E9\ pressionado\ no\ Greenfoot.\r\n
+comment3.params=
+comment3.target=void\ start()
+comment3.text=\r\n\ Inicia\ o\ jogo\ com\ base\ na\ tecla\ pressionada.\r\n\ 'J'\ inicia\ o\ jogo,\ 'A'\ abre\ o\ menu\ de\ ajuda\ e\ 'D'\ abre\ a\ descri\u00E7\u00E3o\ do\ jogo.\r\n
+comment4.params=
+comment4.target=void\ adicionarTextoMenu()
+comment4.text=\r\n\ M\u00E9todo\ usado\ para\ configurar\ os\ textos\ que\ aparecem\ no\ menu\ do\ jogo.\r\n
+numComments=5

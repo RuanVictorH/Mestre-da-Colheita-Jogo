@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Ajuda
+comment0.text=\r\n\ Classe\ Ajuda\ (subclasse\ de\ World)\r\n\ \r\n\ Esta\ classe\ exibe\ os\ comandos\ e\ instru\u00E7\u00F5es\ b\u00E1sicas\ para\ jogar\ o\ jogo.\r\n\ \r\n\ @author\ Alex,\ Pedro\ e\ Ruan\r\n\ @version\ 2024.12.10\r\n
+comment1.params=
+comment1.target=Ajuda()
+comment1.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ Ajuda.\r\n\ Define\ o\ tamanho\ do\ mundo\ e\ inicializa\ os\ componentes.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ M\u00E9todo\ chamado\ a\ cada\ ato\ ou\ quando\ o\ bot\u00E3o\ "Run"\ \u00E9\ pressionado\ no\ Greenfoot.\r\n
+comment3.params=
+comment3.target=void\ voltar()
+comment3.text=\r\n\ Volta\ ao\ menu\ principal\ quando\ a\ tecla\ Backspace\ \u00E9\ pressionada.\r\n
+numComments=4

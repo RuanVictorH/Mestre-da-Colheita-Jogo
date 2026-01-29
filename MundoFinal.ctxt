@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=MundoFinal
+comment0.text=\r\n\ Classe\ MundoFinal\ (subclasse\ de\ World)\r\n\ \r\n\ Esta\ classe\ representa\ o\ mundo\ que\ aparece\ ao\ final\ do\ jogo,\ mostrando\ se\ o\ jogador\ venceu\r\n\ ou\ perdeu,\ os\ pontos\ obtidos\ em\ cada\ fase,\ o\ total\ de\ pontos\ e\ o\ tempo\ de\ dura\u00E7\u00E3o\ da\ partida.\r\n\ \r\n\ @author\ Alex,\ Pedro\ e\ Ruan\r\n\ @version\ 2025.01.10\r\n
+comment1.params=vitoria\ pontosTotais\ tempoInicio\ fase
+comment1.target=MundoFinal(boolean,\ int,\ long,\ int)
+comment1.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ MundoFinal.\r\n\ \r\n\ @param\ vitoria\ Indica\ se\ o\ jogador\ venceu\ (true)\ ou\ perdeu\ (false).\r\n\ @param\ pontosTotais\ Pontos\ totais\ obtidos\ pelo\ jogador.\r\n\ @param\ tempoInicio\ Tempo\ de\ in\u00EDcio\ da\ partida.\r\n\ @param\ fase\ A\ fase\ atual\ (1\ para\ tarde,\ 2\ para\ noite).\r\n
+comment2.params=texto\ tamanhoFonte\ cor\ x\ y
+comment2.target=void\ exibirTexto(java.lang.String,\ int,\ greenfoot.Color,\ int,\ int)
+comment2.text=\r\n\ M\u00E9todo\ auxiliar\ para\ exibir\ um\ texto\ no\ mundo.\r\n\ \r\n\ @param\ texto\ O\ texto\ a\ ser\ exibido.\r\n\ @param\ tamanhoFonte\ O\ tamanho\ da\ fonte\ do\ texto.\r\n\ @param\ cor\ A\ cor\ do\ texto.\r\n\ @param\ x\ A\ posi\u00E7\u00E3o\ horizontal\ do\ texto.\r\n\ @param\ y\ A\ posi\u00E7\u00E3o\ vertical\ do\ texto.\r\n
+numComments=3

@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Cenario
+comment0.text=\r\n\ Classe\ Cenario\ (subclasse\ de\ World)\r\n\ \r\n\ Esta\ classe\ representa\ o\ cen\u00E1rio\ da\ primeira\ fase\ do\ jogo,\ que\ ocorre\ \u00E0\ tarde.\r\n\ \r\n\ @author\ Alex,\ Pedro\ e\ Ruan\r\n\ @version\ 2025.01.08\r\n
+comment1.params=
+comment1.target=Cenario()
+comment1.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ Cenario.\r\n
+comment2.params=
+comment2.target=void\ preparar()
+comment2.text=\r\n\ Prepara\ o\ cen\u00E1rio\ inicial\ do\ jogo,\ adicionando\ o\ jogador.\r\n
+comment3.params=
+comment3.target=Contador\ getContador()
+comment3.text=\r\n\ M\u00E9todo\ para\ acessar\ o\ contador\ de\ frutas.\r\n\ \r\n\ @return\ O\ contador\ de\ frutas.\r\n
+comment4.params=
+comment4.target=void\ act()
+comment4.text=\r\n\ M\u00E9todo\ chamado\ a\ cada\ ato\ ou\ quando\ o\ bot\u00E3o\ "Run"\ \u00E9\ pressionado\ no\ Greenfoot.\r\n\ Gera\ frutas\ boas\ e\ podres\ aleatoriamente.\r\n
+comment5.params=
+comment5.target=void\ addFruta()
+comment5.text=\r\n\ Adiciona\ uma\ ma\u00E7\u00E3\ boa\ ao\ mundo\ em\ uma\ posi\u00E7\u00E3o\ aleat\u00F3ria\ no\ topo.\r\n
+comment6.params=
+comment6.target=void\ addFrutaPodre()
+comment6.text=\r\n\ Adiciona\ uma\ ma\u00E7\u00E3\ podre\ ao\ mundo\ em\ uma\ posi\u00E7\u00E3o\ aleat\u00F3ria\ no\ topo.\r\n
+comment7.params=
+comment7.target=long\ getTempoInicio()
+comment7.text=\r\n\ M\u00E9todo\ para\ acessar\ o\ tempo\ de\ in\u00EDcio\ da\ partida.\r\n\ \r\n\ @return\ O\ tempo\ de\ in\u00EDcio\ da\ partida.\r\n
+numComments=8

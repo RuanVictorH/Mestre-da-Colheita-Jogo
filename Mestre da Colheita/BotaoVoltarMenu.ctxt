@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=BotaoVoltarMenu
+comment0.text=\r\n\ Classe\ BotaoVoltarMenu\ (subclasse\ de\ Botao)\r\n\ \r\n\ Esta\ classe\ representa\ um\ bot\u00E3o\ que\ volta\ ao\ menu\ principal\ quando\ clicado.\r\n\ \r\n\ @author\ Alex,\ Pedro\ e\ Ruan\r\n\ @version\ 2025.01.10\r\n
+comment1.params=
+comment1.target=BotaoVoltarMenu()
+comment1.text=\r\n\ Construtor\ da\ classe\ BotaoVoltarMenu.\r\n
+comment2.params=
+comment2.target=void\ aoClicar()
+comment2.text=\r\n\ M\u00E9todo\ que\ define\ a\ a\u00E7\u00E3o\ do\ bot\u00E3o\ ao\ ser\ clicado.\r\n
+numComments=3

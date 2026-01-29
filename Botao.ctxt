@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Botao
+comment0.text=\r\n\ Classe\ Botao\ (superclasse\ de\ Actor)\r\n\ \r\n\ Esta\ classe\ representa\ um\ bot\u00E3o\ gen\u00E9rico\ que\ pode\ ser\ clicado.\r\n\ \r\n\ @author\ Alex,\ Pedro\ e\ Ruan\r\n\ @version\ 2025.01.10\r\n
+comment1.params=texto\ tamanhoFonte\ corTexto\ corFundo
+comment1.target=Botao(java.lang.String,\ int,\ greenfoot.Color,\ greenfoot.Color)
+comment1.text=\r\n\ Construtor\ da\ classe\ Botao.\r\n\ \r\n\ @param\ texto\ O\ texto\ exibido\ no\ bot\u00E3o.\r\n\ @param\ tamanhoFonte\ O\ tamanho\ da\ fonte\ do\ texto.\r\n\ @param\ corTexto\ A\ cor\ do\ texto.\r\n\ @param\ corFundo\ A\ cor\ de\ fundo\ do\ bot\u00E3o.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ M\u00E9todo\ chamado\ a\ cada\ ato\ ou\ quando\ o\ bot\u00E3o\ "Run"\ \u00E9\ pressionado\ no\ Greenfoot.\r\n\ Verifica\ se\ o\ bot\u00E3o\ foi\ clicado\ e\ executa\ a\ a\u00E7\u00E3o\ correspondente.\r\n
+comment3.params=
+comment3.target=void\ aoClicar()
+comment3.text=\r\n\ M\u00E9todo\ abstrato\ que\ define\ a\ a\u00E7\u00E3o\ do\ bot\u00E3o\ ao\ ser\ clicado.\r\n
+numComments=4

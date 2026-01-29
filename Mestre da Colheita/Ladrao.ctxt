@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Ladrao
+comment0.text=\r\n\ Classe\ Ladrao\ (subclasse\ de\ Actor)\r\n\ \r\n\ Esta\ classe\ representa\ o\ ladr\u00E3o\ que\ rouba\ ma\u00E7\u00E3s\ douradas\ do\ coletor.\r\n\ \r\n\ @author\ Alex,\ Pedro\ e\ Ruan\r\n\ @version\ 2025.01.20\r\n
+comment1.params=contador\ olhandoDireita
+comment1.target=Ladrao(Contador,\ boolean)
+comment1.text=\r\n\ Construtor\ da\ classe\ Ladrao.\r\n\ \r\n\ @param\ contador\ O\ contador\ de\ pontua\u00E7\u00E3o\ do\ jogo.\r\n\ @param\ olhandoDireita\ Define\ se\ o\ ladr\u00E3o\ come\u00E7a\ olhando\ para\ a\ direita.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ M\u00E9todo\ chamado\ a\ cada\ ato\ ou\ quando\ o\ bot\u00E3o\ "Run"\ \u00E9\ pressionado\ no\ Greenfoot.\r\n\ Atualiza\ a\ anima\u00E7\u00E3o\ e\ move\ o\ ladr\u00E3o.\r\n
+comment3.params=
+comment3.target=void\ mover()
+comment3.text=\r\n\ Move\ o\ ladr\u00E3o\ de\ acordo\ com\ a\ dire\u00E7\u00E3o\ atual.\r\n
+comment4.params=
+comment4.target=void\ atualizarAnimacao()
+comment4.text=\r\n\ Atualiza\ a\ anima\u00E7\u00E3o\ do\ ladr\u00E3o.\r\n
+comment5.params=
+comment5.target=void\ verificarColisaoComColetor()
+comment5.text=\r\n\ Verifica\ se\ o\ ladr\u00E3o\ colidiu\ com\ o\ coletor.\r\n
+comment6.params=
+comment6.target=void\ inverterDirecao()
+comment6.text=\r\n\ Inverte\ a\ dire\u00E7\u00E3o\ do\ ladr\u00E3o.\r\n
+numComments=7
