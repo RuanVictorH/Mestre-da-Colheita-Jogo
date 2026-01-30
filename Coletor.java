@@ -10,7 +10,7 @@ import greenfoot.*; // Importa as classes Greenfoot
  * @version 2024.12.08
  */
 public class Coletor extends Actor {
-    private int velocidadeMovimento = 5; // Velocidade padrão de movimento
+    private int velocidadeMovimento = 7; // Velocidade padrão de movimento
     private Contador contador; // Contador para exibir as informações
     private boolean jogoEncerrado = false; // Indica se o jogo terminou
 
@@ -142,8 +142,8 @@ public class Coletor extends Actor {
             forcaPulo -= gravidade; // Reduz a força do pulo
 
             // Verifica se o coletor atingiu o chão
-            if (getY() >= getWorld().getHeight() - 245) {
-                setLocation(getX(), getWorld().getHeight() - 245); // Coloca o coletor no chão
+            if (getY() >= getWorld().getHeight() - 210) {
+                setLocation(getX(), getWorld().getHeight() - 210); // Coloca o coletor no chão
                 pulando = false; // Finaliza o pulo
             }
         }

@@ -2,11 +2,9 @@ import greenfoot.*;  // Importa as classes necessárias do Greenfoot
 
 /**
  * Classe CenarioFase2 (subclasse de World)
- * 
- * Esta classe representa o cenário da segunda fase do jogo, que ocorre à noite.
- * 
- * @author Alex, Pedro e Ruan
- * @version 2025.01.10
+ * * Esta classe representa o cenário da segunda fase do jogo, que ocorre à noite.
+ * * @author Alex, Pedro e Ruan
+ * @version 2026.01.29
  */
 public class CenarioFase2 extends World {
     private Contador contadorDeFrutas; // O contador de frutas
@@ -17,16 +15,17 @@ public class CenarioFase2 extends World {
      * Construtor para objetos da classe CenarioFase2.
      */
     public CenarioFase2() {    
-        super(700, 700, 1); // Configuração do mundo: 700 pixels de largura, 700 de altura, e 1x escala
+        // Configuração do mundo: 1238 pixels de largura, 700 de altura, e 1x escala
+        super(1238, 700, 1); 
 
         // Define o fundo do cenário (noite)
         setBackground("noite.png");
 
         // Cria o contador e o adiciona ao mundo
         contadorDeFrutas = new Contador();
-        addObject(contadorDeFrutas, 350, 20); // Posição do contador no mundo (centralizado)
+        addObject(contadorDeFrutas, getWidth() / 2, 30); // Posição centralizada no topo
 
-        // Toca a música tema do menu
+        // Toca a música tema da fase 2
         ControlaSom.getcontrole().tocarSomDeFundoFase2();
 
         preparar(); // Prepara o cenário inicial
@@ -38,40 +37,51 @@ public class CenarioFase2 extends World {
         contadorDeFrutas.ajustarParaFase2();
     }
 
-    /**
-     * Prepara o cenário inicial do jogo, adicionando o jogador.
-     */
     private void preparar() {
-        // Adiciona o personagem no centro inferior do mundo
+        // Posicionamento original da Fase 2
         Coletor coletor = new Coletor(contadorDeFrutas);
         addObject(coletor, getWidth() / 2, getHeight() - 230);
     }
-
-    /**
-     * Método para acessar o contador de frutas.
-     * 
-     * @return O contador de frutas.
-     */
-    public Contador getContador() {
-        return contadorDeFrutas;
+    
+    private void gerarLadrao() {
+        if (getObjects(Ladrao.class).isEmpty()) {
+            boolean gerarDaEsquerda = Greenfoot.getRandomNumber(2) == 0;
+            int x = gerarDaEsquerda ? 0 : getWidth();
+            
+            // Retornando o Ladrão para a altura de 235 pixels
+            int y = getHeight() - 235; 
+    
+            Ladrao ladrao = new Ladrao(contadorDeFrutas, !gerarDaEsquerda);
+            addObject(ladrao, x, y);
+        }
     }
 
     /**
-     * Método chamado a cada ato ou quando o botão "Run" é pressionado no Greenfoot.
-     * Gera maçãs douradas, frutas podres e ladrões aleatoriamente.
+     * Método chamado a cada ato na Fase 2.
+     * Aumenta a agressividade conforme o jogador progride.
      */
     public void act() {
-        // Gera duas maçãs douradas a cada 200 maçãs
-        if (Greenfoot.getRandomNumber(300) < 2) {
-            addMacaDourada();
+        int boas = contadorDeFrutas.getMacasBoas();
+
+        // Velocidade base da Fase 2: Começa em 3, Máximo 10.
+        int velCalculada = 3 + (boas / 4);
+        if (velCalculada > 10) velCalculada = 10;
+
+        // Frequência Fase 2: Começa em 8 (0.8%). Aumenta +3 a cada 5 maçãs.
+        int chanceDeSpawn = 8 + (boas * 3 / 5);
+        if (chanceDeSpawn > 40) chanceDeSpawn = 40; // Limite de 4%
+
+        // Gera maçãs douradas
+        if (Greenfoot.getRandomNumber(1000) < chanceDeSpawn) {
+            addMacaDourada(velCalculada);
         }
 
-        // Gera uma maçã podre a cada 400 maçãs
-        if (Greenfoot.getRandomNumber(400) < 1) {
-            addFrutaPodre();
+        // Gera maçãs podres (0.5% de chance fixa)
+        if (Greenfoot.getRandomNumber(1000) < 5) {
+            addFrutaPodre(velCalculada);
         }
 
-        // Gera um ladrão de tempos em tempos
+        // Lógica do Ladrão
         if (tempoProximoLadrao <= 0) {
             gerarLadrao();
             tempoProximoLadrao = Greenfoot.getRandomNumber(300) + 200;
@@ -79,47 +89,29 @@ public class CenarioFase2 extends World {
             tempoProximoLadrao--;
         }
     }
-
+    
     /**
-     * Adiciona uma maçã dourada ao mundo em uma posição aleatória no topo.
+     * Adiciona uma maçã dourada ao mundo com a velocidade calculada.
      */
-    private void addMacaDourada() {
-        MacaDourada macaDourada = new MacaDourada();
+    private void addMacaDourada(int vel) {
+        MacaDourada macaDourada = new MacaDourada(vel);
         int x = Greenfoot.getRandomNumber(getWidth());
         addObject(macaDourada, x, 0);
     }
 
     /**
-     * Adiciona uma maçã podre ao mundo em uma posição aleatória no topo.
+     * Adiciona uma maçã podre ao mundo com a velocidade calculada.
      */
-    private void addFrutaPodre() {
-        MacaPodre macaPodre = new MacaPodre();
+    private void addFrutaPodre(int vel) {
+        MacaPodre macaPodre = new MacaPodre(vel);
         int x = Greenfoot.getRandomNumber(getWidth());
         addObject(macaPodre, x, 0);
     }
 
-    /**
-     * Adiciona um ladrão ao mundo.
-     */
-    private void gerarLadrao() {
-        // Verifica se já existe um ladrão no mundo
-        if (getObjects(Ladrao.class).isEmpty()) {
-            // Escolhe aleatoriamente o lado de geração (esquerda ou direita)
-            boolean gerarDaEsquerda = Greenfoot.getRandomNumber(2) == 0;
-            int x = gerarDaEsquerda ? 0 : getWidth();
-            int y = getHeight() - 235;
-
-            // Gera um novo ladrão
-            Ladrao ladrao = new Ladrao(contadorDeFrutas, !gerarDaEsquerda); // Usa contadorDeFrutas
-            addObject(ladrao, x, y);
-        }
+    public Contador getContador() {
+        return contadorDeFrutas;
     }
 
-    /**
-     * Método para acessar o tempo de início da partida.
-     * 
-     * @return O tempo de início da partida.
-     */
     public long getTempoInicio() {
         return tempoInicio;
     }

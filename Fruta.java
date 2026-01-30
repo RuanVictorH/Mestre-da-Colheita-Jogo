@@ -1,59 +1,34 @@
-import greenfoot.*; // Importa as classes Greenfoot
+import greenfoot.*;
 
 /**
- * Classe Fruta (subclasse de Actor)
- * 
- * Esta classe representa as frutas e suas ações dentro do jogo.
- * 
- * @autor Alex, Pedro e Ruan
- * @version 2025.01.20
+ * Classe pai para todas as frutas.
  */
 public class Fruta extends Actor {
-    private int velocidade; // Velocidade de movimento da fruta
+    protected int velocidade; // Usamos protected para as subclasses acessarem se precisarem
 
-    /**
-     * Construtor da classe Fruta.
-     * Inicializa a velocidade e escala a imagem da fruta.
-     * 
-     * @param velocidade A velocidade de movimento da fruta.
-     */
     public Fruta(int velocidade) {
         this.velocidade = velocidade;
         GreenfootImage imagem = getImage();
-        imagem.scale(imagem.getWidth() / 2, imagem.getHeight() / 2);
+        imagem.scale(50, 50); 
         setImage(imagem);
     }
 
-    /**
-     * Método chamado a cada ato ou quando o botão "Run" é pressionado no Greenfoot.
-     * Faz a fruta cair.
-     */
     public void act() {
         cair();
+        if (getY() >= getWorld().getHeight() - 180) {
+            executarAcaoDePerda();
+            getWorld().removeObject(this);
+        }
     }
 
-    /**
-     * Move a fruta para baixo com a velocidade definida.
-     */
     public void cair() {
         setLocation(getX(), getY() + velocidade);
     }
 
     /**
-     * Aumenta a velocidade da fruta até um máximo de 5.
+     * Método que as subclasses (Maca) podem sobrescrever para tirar pontos ou atualizar contadores.
      */
-    public void aumentarVelocidade() {
-        if (velocidade < 5) {
-            velocidade++;
-        }
-    }
-
-    /**
-     * Acessa a velocidade da fruta.
-     * 
-     * @return A velocidade da fruta.
-     */
-    public int getVelocidade() {
-        return velocidade;
+    protected void executarAcaoDePerda() {
+        // Por padrão, não faz nada.
     }
 }

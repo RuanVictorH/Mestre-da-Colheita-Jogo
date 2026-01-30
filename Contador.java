@@ -40,17 +40,18 @@ public class Contador extends Actor {
      * Verifica se o jogador perdeu o jogo.
      */
     private void verificarDerrota() {
-        if (macasBoasPerdidas >= limiteMacasPerdidas) {
-            World mundo = getWorld();
-            if (mundo != null) {
-                // Obtém o coletor do mundo
-                Coletor coletor = mundo.getObjects(Coletor.class).get(0);
-                if (coletor != null) {
-                    coletor.morrer(); // Chama o método morrer() do coletor
-                }
+    if (macasBoasPerdidas >= limiteMacasPerdidas) {
+        World mundo = getWorld();
+        if (mundo != null) {
+            // Verifica se a lista não está vazia antes de tentar pegar o primeiro item
+            java.util.List<Coletor> coletores = mundo.getObjects(Coletor.class);
+            if (!coletores.isEmpty()) {
+                Coletor coletor = coletores.get(0);
+                coletor.morrer(); 
             }
         }
     }
+}
 
     /**
      * Método chamado a cada ato ou quando o botão "Run" é pressionado no Greenfoot.

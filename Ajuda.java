@@ -18,31 +18,12 @@ public class Ajuda extends World
      */
     public Ajuda()
     {    
-        super(700, 700, 1); // Cria um novo mundo com 700x700 células com o tamanho da célula de 1x1 pixels.
+        super(1200, 655, 1); // Cria um novo mundo com 700x700 células com o tamanho da célula de 1x1 pixels.
         GreenfootImage imagemFundo = new GreenfootImage(getWidth(), getHeight()); // Cria uma nova imagem com as dimensões do mundo
-        setBackground("imagem-Ajuda(1).png"); // Imagem de fundo
+        setBackground("Tela_Ajuda.jpg"); // Imagem de fundo
         controlaSom = ControlaSom.getcontrole();
         controlaSom.tocarMusicasMenu(2); // Toca a música de fundo
 
-        // Adiciona o texto com as instruções do jogo
-        imagemFundo = getBackground(); 
-        String instrucoes = "Bem-vindo ao Mestre da Colheita!\n\n" +
-                            "Comandos:\n\n" +
-                            "← (Seta Esquerda): Move o coletor para a esquerda.\n\n" +
-                            "→ (Seta Direita): Move o coletor para a direita.\n\n" +
-                            "↑ (Seta para Cima): Faz o coletor pular.\n\n" +
-                            "Objetivo:\n\n" +
-                            "Fase 1: Colete 30 maçãs boas para vencer.\n" +
-                            "Fase 2: Colete 20 maçãs douradas para vencer.\n\n" +
-                            "Cuidado:\n" +
-                            "Maçãs podres aumentam a quantidade necessária para vencer.\n" +
-                            "Evite perder muitas maçãs ou pegar muitas podres!\n\n" +
-                            "Pressione Backspace para voltar ao menu principal.\n\n" +
-                            "Boa sorte!";
-        GreenfootImage texto = new GreenfootImage(instrucoes, 24, Color.WHITE, new Color(0, 0, 0, 128));
-        int xTexto = (getWidth() - texto.getWidth()) / 2;
-        int yTexto = (getHeight() - texto.getHeight()) / 2;
-        imagemFundo.drawImage(texto, xTexto, yTexto);
     }
 
     /**

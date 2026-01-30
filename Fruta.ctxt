@@ -1,19 +1,13 @@
 #BlueJ class context
 comment0.target=Fruta
-comment0.text=\r\n\ Classe\ Fruta\ (subclasse\ de\ Actor)\r\n\ \r\n\ Esta\ classe\ representa\ as\ frutas\ e\ suas\ a\u00E7\u00F5es\ dentro\ do\ jogo.\r\n\ \r\n\ @autor\ Alex,\ Pedro\ e\ Ruan\r\n\ @version\ 2025.01.20\r\n
+comment0.text=\r\n\ Classe\ pai\ para\ todas\ as\ frutas.\r\n
 comment1.params=velocidade
 comment1.target=Fruta(int)
-comment1.text=\r\n\ Construtor\ da\ classe\ Fruta.\r\n\ Inicializa\ a\ velocidade\ e\ escala\ a\ imagem\ da\ fruta.\r\n\ \r\n\ @param\ velocidade\ A\ velocidade\ de\ movimento\ da\ fruta.\r\n
 comment2.params=
 comment2.target=void\ act()
-comment2.text=\r\n\ M\u00E9todo\ chamado\ a\ cada\ ato\ ou\ quando\ o\ bot\u00E3o\ "Run"\ \u00E9\ pressionado\ no\ Greenfoot.\r\n\ Faz\ a\ fruta\ cair.\r\n
 comment3.params=
 comment3.target=void\ cair()
-comment3.text=\r\n\ Move\ a\ fruta\ para\ baixo\ com\ a\ velocidade\ definida.\r\n
 comment4.params=
-comment4.target=void\ aumentarVelocidade()
-comment4.text=\r\n\ Aumenta\ a\ velocidade\ da\ fruta\ at\u00E9\ um\ m\u00E1ximo\ de\ 5.\r\n
-comment5.params=
-comment5.target=int\ getVelocidade()
-comment5.text=\r\n\ Acessa\ a\ velocidade\ da\ fruta.\r\n\ \r\n\ @return\ A\ velocidade\ da\ fruta.\r\n
-numComments=6
+comment4.target=void\ executarAcaoDePerda()
+comment4.text=\r\n\ M\u00E9todo\ que\ as\ subclasses\ (Maca)\ podem\ sobrescrever\ para\ tirar\ pontos\ ou\ atualizar\ contadores.\r\n
+numComments=5

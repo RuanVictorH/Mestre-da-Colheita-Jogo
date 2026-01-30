@@ -19,14 +19,11 @@ public class Menu extends World
      */
     public Menu()
     {   
-        super(700, 700, 1); // Cria um novo mundo com 700x700 células com o tamanho da célula de 1x1 pixels.
+        super(1200, 655, 1); // Cria um novo mundo com 700x700 células com o tamanho da célula de 1x1 pixels.
         
         // Define a imagem de fundo
-        setBackground("menu.jpg");
+        setBackground("menu.png");
         
-        // Adiciona os textos ao menu
-        adicionarTextoMenu();
-
         // Inicia o controlador de som
         controlaSom = new ControlaSom();
         controlaSom.tocarMusicasMenu(0);
@@ -65,42 +62,6 @@ public class Menu extends World
         }
     }
     
-    /**
-     * Método usado para configurar os textos que aparecem no menu do jogo.
-     */
-    public void adicionarTextoMenu()
-    {
-        GreenfootImage imagemFundo = getBackground();
-        
-        // Informações dos desenvolvedores
-        String desenvolvedores = "Desenvolvedores: Alex, Pedro e Ruan";
-        GreenfootImage textoDesenvolvedores = new GreenfootImage(desenvolvedores, 20, Color.WHITE, new Color(0, 0, 0, 128));
-        int xDesenvolvedores = (getWidth() - textoDesenvolvedores.getWidth()) / 2;
-        int yDesenvolvedores = 100;
-        imagemFundo.drawImage(textoDesenvolvedores, xDesenvolvedores, yDesenvolvedores);
 
-        // Informações da disciplina
-        String disciplina = "Introdução à Programação Orientada a Objetos (IPOO)";
-        GreenfootImage textoDisciplina = new GreenfootImage(disciplina, 20, Color.WHITE, new Color(0, 0, 0, 128));
-        int xDisciplina = (getWidth() - textoDisciplina.getWidth()) / 2;
-        int yDisciplina = 130;
-        imagemFundo.drawImage(textoDisciplina, xDisciplina, yDisciplina);
-
-        // Período
-        String periodo = "Período: 2024-2";
-        GreenfootImage textoPeriodo = new GreenfootImage(periodo, 20, Color.WHITE, new Color(0, 0, 0, 128));
-        int xPeriodo = (getWidth() - textoPeriodo.getWidth()) / 2;
-        int yPeriodo = 160;
-        imagemFundo.drawImage(textoPeriodo, xPeriodo, yPeriodo);
-
-        // Instruções do jogo
-        String instrucoes = "Pressione J para iniciar o Jogo.\n\n" +
-                            "Pressione A para abrir o menu de Ajuda.\n\n" +
-                            "Pressione D para ver a Descrição do jogo.";
-        GreenfootImage textoInstrucoes = new GreenfootImage(instrucoes, 24, Color.WHITE, new Color(0, 0, 0, 128));
-        int xInstrucoes = (getWidth() - textoInstrucoes.getWidth()) / 2;
-        int yInstrucoes = getHeight() - 250; // Posição inferior
-        imagemFundo.drawImage(textoInstrucoes, xInstrucoes, yInstrucoes);
-    }
 }
 

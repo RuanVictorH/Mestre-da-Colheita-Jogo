@@ -1,10 +1,10 @@
 #BlueJ class context
 comment0.target=MacaDourada
-comment0.text=\r\n\ Classe\ MacaDourada\ (subclasse\ de\ Fruta)\r\n\ \r\n\ Esta\ classe\ representa\ as\ ma\u00E7\u00E3s\ douradas\ que\ o\ jogador\ deve\ coletar\ na\ segunda\ fase.\r\n\ \r\n\ @author\ Alex,\ Pedro\ e\ Ruan\r\n\ @version\ 2025.01.20\r\n
-comment1.params=
-comment1.target=MacaDourada()
-comment1.text=\r\n\ Construtor\ da\ classe\ MacaDourada.\r\n
+comment0.text=\r\n\ Classe\ MacaDourada\ (subclasse\ de\ Fruta)\r\n\ *\ Esta\ classe\ representa\ as\ ma\u00E7\u00E3s\ douradas\ que\ o\ jogador\ deve\ coletar\ na\ segunda\ fase.\r\n
+comment1.params=vel
+comment1.target=MacaDourada(int)
+comment1.text=\r\n\ Construtor\ da\ classe\ MacaDourada.\r\n\ @param\ vel\ Velocidade\ recebida\ do\ mundo.\r\n
 comment2.params=
-comment2.target=void\ act()
-comment2.text=\r\n\ M\u00E9todo\ chamado\ a\ cada\ ato\ ou\ quando\ o\ bot\u00E3o\ "Run"\ \u00E9\ pressionado\ no\ Greenfoot.\r\n\ Faz\ a\ fruta\ realizar\ suas\ a\u00E7\u00F5es.\r\n
+comment2.target=void\ executarAcaoDePerda()
+comment2.text=\r\n\ M\u00E9todo\ chamado\ automaticamente\ pela\ superclasse\ Fruta\ quando\ a\ ma\u00E7\u00E3\ toca\ o\ ch\u00E3o.\r\n
 numComments=3
